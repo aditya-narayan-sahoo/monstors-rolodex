@@ -1,3 +1,10 @@
+body {
+  padding: 30px 0;
+  margin: 0;
+  font-family: "Arial", sans-serif; /* Set a default font family */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #ff6f61 50%, #ff9f8a 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +29,19 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 20px; /* Added padding for spacing */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Darker shade on hover */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +51,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  font-family: "Bigelow Rules", cursive; /* Ensure cursive fallback */
+  font-size: 72px;
+  color: #0cc4ca; /* Color for the heading */
+  margin: 20px 0; /* Spacing around the heading */
+  line-height: 1.2; /* Improved line height for readability */
 }

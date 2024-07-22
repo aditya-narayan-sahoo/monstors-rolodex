@@ -1,9 +1,21 @@
 .search {
-  -webkit-appearance: none;
+  width: 300px;
+  padding: 10px 15px;
   border: none;
-  outline: none;
-  padding: 10px;
-  width: 150px;
-  line-height: 30px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
   margin-bottom: 30px;
+}
+
+.search:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search::placeholder {
+  color: #999;
 }
